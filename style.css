@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', 'cursive';
+    background-color: rgb(237, 163, 187);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+
+.logo img{
+    width: 6rem; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgb(165, 116, 132);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 1;
+    background-color: rgb(211, 148, 168);
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 2.5rem;
+    line-height: 3.125rem;
+    margin: 0.188rem;
+    padding: 0rem 1.25rem;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;  
+    color:black;
+    letter-spacing: 1px;    
+    transition: 0.5s ease;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.active{
+    border-bottom: 2px solid white;
+}
+
+/*********************headerrrr*******************/
+#header{
+    width: 100%;
+    height: 48rem;
+    background-color: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-image: url(images/bg.gif);
+}
+.header-heading{
+    max-width: 52%;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    color: black;
+    transform: translate(-18%,-50%);
+}
+.header-heading h1{
+    font-size: 2.5rem; 
+    margin:0.5px;
+    letter-spacing: 3px;
+}
+.header-heading h1 span{
+    color:rgb(165, 116, 132);
+}
+.header-btn{
+    width: 9.375rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 5px 10px 30px rgb(165, 116, 132);
+    border-radius:20px;
+    margin-top: 2rem;
+    transition: 0.6s ease-in-out;
+    font-family:'Silkscreen';
+}
+.header-btn:hover{
+    background-color: rgb(246, 154, 185);
+}
+
+/****************aboutttt****************/
+#about{
+    width: 100%;
+    height: 118vh;
+    background-color: rgb(255, 255, 255) ;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+
+.about-img{
+    background-color: white;
+    max-width: 18rem;
+    width:18rem;
+    height: 28rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+}
+
+.about-img img{
+    width: 17.5rem;
+}
+
+.about-text{
+    width: 48%;
+    color:black ;
+    background-image: url(images/heart.jpg);
+    background-size:cover;
+    background-position: 0rem;
+    overflow: visible;
+
+}
+.about-text h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.about-text h3 span{
+    color: rgb(255, 255, 255);
+    font-size:25px;
+
+}
+.about-text p{
+    width: 37.5rem;
+    ;
+}
+
+.readmore-btn{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 5px 10px 30px rgb(165, 116, 132);
+    border-radius:20px;
+    margin-top: 35px;
+    transition: 0.6s ease-in-out;
+    font-family:'Silkscreen';
+}
+.readmore-btn:hover{
+    background-color: rgb(246, 154, 185);
+}
+
+.about-text h1{
+    width: 600px;
+    color:white;
+}
+.space{
+    width: 600px;
+    color:white;
+}
+
+/****************resumee****************/
+#resume{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding: 2.5rem 0rem;
+    background-image: url(images/resumebg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.resume-text{
+    width: 100%;
+    height: 35%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.resume-heading p{
+    text-align: center;
+
+}
+
+.resume-heading h1{
+    font-size: 2.5rem;
+    color: black;
+}
+.resume-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.resume-img1{
+    background-color: white;
+    width: 20rem ;
+    height: 26rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/meat42.jpg);
+    background-size: cover;
+}
+
+.resume-img2{
+    background-color: white;
+    width: 20rem ;
+    height: 26rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/resume2.gif);
+    background-size: cover;
+}
+
+.resume-img3{
+    background-color: white;
+    width: 20rem ;
+    height: 26rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/meat422.jpg);
+    background-size: cover;
+}
+
+
+/****************resumee2222****************/
+#resume2{
+    width: 100%;
+    height: 350vh;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding: 2.5rem 0rem;
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url(images/resume2bg.jpg);
+}
+.dsil{
+    display: flex;
+    justify-content: center;
+}
+.dsil-img{
+    background-color: white;
+    width: 30rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    background-image: url(images/atdsl.JPG);
+    background-size: cover;
+}
+.dsil-text{
+    background-color: white;
+    width: 35rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    display:flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+.dsil-text h1{
+    font-size: 1.1rem;
+    color: rgb(246, 154, 185);
+    margin-top: 3rem;
+    
+}
+.dsil-text h2{
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    
+}
+.bangkok{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.bangkok-img{
+    background-color: white;
+    width: 30rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    background-image: url(images/dsuttawe.JPG);
+    background-size: cover;
+}
+.bangkok-text{
+    background-color: white;
+    width: 35rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    display:flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+.bangkok-text h1{
+    font-size: 1.1rem;
+    color: rgb(246, 154, 185);
+    margin-top: 3rem;
+    
+}
+.bangkok-text h2{
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    
+}
+
+.dtac{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.dtac-img{
+    background-color: white;
+    width: 30rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    background-image: url(images/dtac.png);
+    background-size: cover;
+}
+.dtac-text{
+    background-color: white;
+    width: 35rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    display:flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+.dtac-text h1{
+    font-size: 1.1rem;
+    color: rgb(246, 154, 185);
+    margin-top: 3rem;
+    
+}
+.dtac-text h2{
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    
+}
+.cira{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    align-items: center;
+}
+.cira-box{
+    display: flex;
+   
+
+}
+.cira-img1{
+    background-color: white;
+    width: 20rem ;
+    height: 15rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    background-image: url(images/lettuce.gif);
+    background-size: cover;
+    margin-top: 18rem;
+}
+.cira-img2{
+    background-color: white;
+    width: 20rem ;
+    height: 15rem;
+    margin-left: 0rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    background-image: url(images/kpnai.jpg);
+    background-size: cover;
+}
+.cira-text{
+    background-color: white;
+    width: 35rem ;
+    height: 25rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    display:flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+   
+}
+.cira-text h1{
+    font-size: 1.1rem;
+    color: rgb(246, 154, 185);
+    margin-top: 3rem;
+    
+}
+.cira-text h2{
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    
+}
+/************certi*************/
+#certificates{
+    width: 100%;
+    height: 325vh;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding: 2.5rem 0rem;
+    background-image: url(images/certibg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.certi-heading h1{
+    font-size: 2.5rem;
+    color: black;
+}
+.certi-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.certi-img1{
+    background-color: white;
+    width: 30rem ;
+    height: 22rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/dsil.jpg);
+    background-size: cover;
+}
+
+.certi-img2{
+    background-color: white;
+    width: 30rem ;
+    height: 22rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/42.png);
+    background-size: cover;
+}
+.certi-img3{
+    background-color: white;
+    width: 30rem ;
+    height: 22rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/dtac.jpg);
+    background-size: cover;
+}
+.certi-img4{
+    background-color: white;
+    width: 30rem ;
+    height: 22rem;
+    margin: 1.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:4px 10px 12px rgb(165, 116, 132) ;
+    position: relative;
+    background-image: url(images/ai.jpg);
+    background-size: cover;
+}
+
+/**************contact**************/
+#contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    background-image: url(images/contactbg.gif) ;
+    background-size: cover;
+
+}
+#contact form{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact form input,#contact form textarea{
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 10px;
+    background-color:rgb(254, 224, 234) ;
+    color: black;
+    border-radius: 5px;
+}
+#contact form textarea{
+    height: 150px;
+}
+#contact form input[type="submit"]{
+    height: 45px;
+    background-color: rgb(165, 116, 132);
+    color: black;
+    text-transform: uppercase;
+}
+
+#contact form input[type="submit"]:hover{
+    background: #836683;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 12%;
+    height: 9%;
+    border-radius:50%;
+    text-align: center;
+    text-decoration: none;
+   
+}
+.fa:hover {
+    background: #f9aff9;
+}
+
+.fa-facebook{
+    background:rgb(237, 163, 187);
+    color: white;
+}
+.fa-instagram{
+    background:rgb(237, 163, 187);
+    color: white;
+}
